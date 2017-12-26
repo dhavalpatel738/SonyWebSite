@@ -1,0 +1,19 @@
+#pageContainer {
+    margin: 5px;
+    padding: 5px;
+}
+
+#logoImg {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: -25px;
+    color: #111E7E;
+}
