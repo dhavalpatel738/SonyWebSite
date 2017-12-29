@@ -17,10 +17,13 @@
     color: red;
     position: relative;
     top: -4px;
+    letter-spacing: 6px;
 }
 
-#logoText sub{
+#logoTextSub{
     font-weight: bold;
     font-size: 15px;
     color: red;
+    position: relative;
+    top: -5px;
 }
