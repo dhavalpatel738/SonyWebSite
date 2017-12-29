@@ -1,7 +1,14 @@
 #pageContainer {
+    width: 1000px;
+    
+}
+
+#firstSection {
     margin: 5px;
     padding: 5px;
     font-family: Georgia, serif;
+    background-color: azure;
+    height: 30px;
 }
 
 #logoImg {
@@ -11,6 +18,10 @@
     margin-right: 5px;
 }
 
+#logo {
+    width: 800px;
+}
+
 #logoText {
     font-weight: bold;
     font-size: 20px;
@@ -18,6 +29,7 @@
     position: relative;
     top: -4px;
     letter-spacing: 6px;
+    float: left;
 }
 
 #logoTextSub{
@@ -26,4 +38,26 @@
     color: red;
     position: relative;
     top: -5px;
+    letter-spacing: normal;
+    
+}
+
+.clear {
+    float: 0;
+}
+
+#menu {
+    float: right;
+    width: 250px;
+}
+
+.menuItem {
+    border-right: 1px solid black;
+    padding-right: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover {
+    color: blue;
 }
