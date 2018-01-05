@@ -11,24 +11,47 @@
             }
             
             #contactUs {
+                width: 200px;
                 font-weight: bold;
                 font-size: 30px;
+                float: left;
+            }
+            
+            #menu {
+                height: 80px;
                 border-bottom: 1px solid black;
             }
             
+            #menuItem {
+                float: right;
+                width: 250px;
+                position: relative;
+                top: 40px;
+            }
+            
+            #menuItem a:hover {
+                color: blue;
+            }
+            
+            .menulist {
+                border-right: 1px solid black;
+                padding-right: 5px;
+                text-decoration: none;
+                color: black;
+            }
+            
             .clear {
-                margin: 0;
-                padding: 0;
+                float: 0;
             }
             
             #address {
-                width: 300px;
-                margin: 30px;
+                width: 200px;
                 padding-right: 40px;
                 border-right: 1px solid black;
                 float: left;
                 position: relative;
                 top: 100px;
+                left: -100px;
             }
             
             .addressLocationTitle {
@@ -43,10 +66,12 @@
             }
             
             #location {
-                width: 500px;
+                width: 100px;
                 margin: 30px;
                 padding-left: 10px;
                 float: left;
+                position: relative;
+                left: -80px;
             }
             
             #mapLocation {
@@ -55,7 +80,7 @@
             
             #iframeLocation {
                 float: left;
-                width: 500px;
+                width: 600px;
                 height: 400px;
             }
         </style>
@@ -66,10 +91,20 @@
     
         <div id="pageContainer">
             
+            <div id="menu">
             <div id="contactUs">
             
                 <p>Contact us</p>
                 
+            </div>
+            
+            <div id="menuItem">
+                    <a href="Welcome.html" class="menulist">HOME</a>
+
+                    <a href="" class="menulist">GALLARY</a>
+
+                    <a href="ContactUs.html" class="menulist">CONTACT US</a>
+            </div>
             </div>
             
             <div class="clear"></div>
