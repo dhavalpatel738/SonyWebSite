@@ -7,26 +7,39 @@
         
             #pageContainer {
                 width: 1000px;
+                padding: 10px;
+                margin: 10px;
                 font-family: Georgia, serif;
             }
             
-            #contactUs {
+            #firstSection {
+                height: 50px;
+                width: 1000px;
+            }
+            
+            #logoImg {
                 width: 200px;
-                font-weight: bold;
-                font-size: 30px;
+                height: 50px;
                 float: left;
             }
             
-            #menu {
-                height: 80px;
+            #contactUsDiv {
+                width: 1000px;
+                height: 50px;
                 border-bottom: 1px solid black;
+            }
+            
+            #contactUs {
+                float: left;
+                position: relative;
+                top: -10px;
             }
             
             #menuItem {
                 float: right;
-                width: 250px;
                 position: relative;
-                top: 40px;
+                top: 20px;
+                width: 250px;
             }
             
             #menuItem a:hover {
@@ -42,16 +55,20 @@
             
             .clear {
                 float: 0;
+                clear: both;
+            }
+            
+            #addressDiv {
+                width: 1000px;
+                height: 700px;
+                float: left;
             }
             
             #address {
                 width: 200px;
-                padding-right: 40px;
                 border-right: 1px solid black;
                 float: left;
                 position: relative;
-                top: 100px;
-                left: -100px;
             }
             
             .addressLocationTitle {
@@ -66,12 +83,10 @@
             }
             
             #location {
-                width: 100px;
-                margin: 30px;
+                width: 600px;
                 padding-left: 10px;
                 float: left;
                 position: relative;
-                left: -80px;
             }
             
             #mapLocation {
@@ -80,8 +95,8 @@
             
             #iframeLocation {
                 float: left;
-                width: 600px;
-                height: 400px;
+                width: 750px;
+                height: 300px;
             }
         </style>
 
@@ -91,49 +106,55 @@
     
         <div id="pageContainer">
             
-            <div id="menu">
-            <div id="contactUs">
-            
-                <p>Contact us</p>
-                
-            </div>
-            
-            <div id="menuItem">
-                    <a href="Welcome.html" class="menulist">HOME</a>
+            <div id="firstSection">
+                <img id="logoImg" src="Images/logo.png">
 
-                    <a href="" class="menulist">GALLARY</a>
+                <div id="menuItem">
+                        <a href="Welcome.html" class="menulist">HOME</a>
 
-                    <a href="ContactUs.html" class="menulist">CONTACT US</a>
-            </div>
+                        <a href="" class="menulist">GALLARY</a>
+
+                        <a href="ContactUs.html" class="menulist">CONTACT US</a>
+                </div>
             </div>
             
             <div class="clear"></div>
             
-            <div id="address">
-            
-                <p><span class="addressLocationTitle">Address</span></p>
-                <p>
-                    <span id="sonyTitle">SONY</span> CERAMICS <br>
-                    8-A, National Highway, <br>
-                    Matel Road, <br>
-                    Dhuva- 363622 <br>
-                    Tal: Wankaner <br>
-                    Dist: Rajkot, Gujarat<br>
-                    Ph: +91-9979997992 <br>
-                    Email: sonycera738@yahoo.co.in <br> 
-                    
-                </p>
-                    
-                
-            </div>
-            
-            <div id="location">
-                <p><span class="addressLocationTitle">Reach us</span></p>
-                
-                <div id="mapLocation">
-                    <iframe id="iframeLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.158593994722!2d70.94265294958264!3d22.722345933112834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395991053cecc553%3A0x1c65fddaf5b3a77d!2sSony+Ceramics!5e0!3m2!1sen!2sin!4v1515138036477" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="contactUsDiv">
+                <div id="contactUs">
+                    <h2>Contact us</h2>
                 </div>
             </div>
+            
+            <div class="clear"></div>
+            
+            <div id="addressDiv">
+                <div id="address">
+
+                    <p><span class="addressLocationTitle">Address</span></p>
+                    <p>
+                        <span id="sonyTitle">SONY</span> CERAMICS <br>
+                        8-A, National Highway, <br>
+                        Matel Road, <br>
+                        Dhuva- 363622 <br>
+                        Tal: Wankaner <br>
+                        Dist: Rajkot, Gujarat<br>
+                        Ph: +91-9979997992 <br>
+                        Email: sonycera738@yahoo.co.in <br> 
+
+                    </p>
+
+
+                </div>
+
+                <div id="location">
+                    <p><span class="addressLocationTitle">Reach us</span></p>
+
+                    <div id="mapLocation">
+                        <iframe id="iframeLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.158593994722!2d70.94265294958264!3d22.722345933112834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395991053cecc553%3A0x1c65fddaf5b3a77d!2sSony+Ceramics!5e0!3m2!1sen!2sin!4v1515138036477" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                </div>
         
         </div>
         
