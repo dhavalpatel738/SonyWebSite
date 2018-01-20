@@ -1,6 +1,6 @@
 #pageContainer {
     width: 1000px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     
 }
@@ -37,4 +37,11 @@
 
 #menu a:hover {
     color: blue;
+}
+
+#imageSliderDiv {
+    width: 1000px;
+    height: 500px;
+    margin: 10 auto;
+    float: left;
 }
