@@ -26,6 +26,11 @@
               margin-top: 30px;
               margin-bottom: 5px;
           }
+          
+          #searchResult {
+              width: 150px;
+              height: 200px;
+          }
             
           #alertDialog {
               display: none;
@@ -65,15 +70,20 @@
           
           var designs = [];
           for(var key in items) {
-              console.log(items[key].label);
               designs.push(items[key].label);
           }
           console.log(designs);
           
           var isFound = false;
+          var item;
           $.each(designs, function(index, value) { 
-              if(design == value) isFound = true;
+              if(design == value) {
+                  isFound = true;
+                  item = items[index];
+              }
           });
+          
+          console.log(item);
           
           $(document).ready(function() {
           if(!isFound) {
@@ -85,10 +95,10 @@
           
               
           //href="Images/LightDarkSeries/37281-l.jpeg"
-          $("#img-lg").attr("href", "Images/LightDarkSeries/"+design+"-l.jpeg");
+          $("#img-lg").attr("href", item.image_lg);
           
           //src="Images/LightDarkSeries/37281-sm.jpg" 
-          $("#img-sm").attr("src", "Images/LightDarkSeries/"+design+"-sm.jpg");
+          $("#img-sm").attr("src", item.image_sm);
           
           //label
           $("#label").html(design);
@@ -156,9 +166,9 @@
       </nav>
       
       <div class="container" id="searchResult">
-      <div class="row" id="firstSection">
+      <!--div class="row" id="firstSection"-->
           <div class="card-deck">
-              <div class="col-sm-6">
+              <!-- div class="col-sm-4"-->
                   <div class="card">
                       <a class="image-popup-no-margins" id="img-lg">
                           <img class="card-img-top" id="img-sm" alt="Card image cap">
@@ -168,8 +178,8 @@
               </div>
               
               </div>
-          </div>  
-      </div>
+          <!--/div>  
+      </div-->
       
       <div id="alertDialog" class="alert alert-danger" role="alert">
           <h4 class="alert-heading">Not found!</h4>
