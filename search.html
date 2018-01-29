@@ -26,6 +26,10 @@
               margin-top: 30px;
               margin-bottom: 5px;
           }
+            
+          #alertDialog {
+              display: none;
+          }
           
           .mfp-no-margins img.mfp-img {
             padding: 0;
@@ -43,15 +47,18 @@
       </style>
       
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
+      <script src="js/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
       <script src="js/jquery.magnific-popup.js"></script>
+      <script src="js/jquery-ui.js"></script>
       <script src="items.js"></script>
+      <script src="autocomplete.js"></script>
       
       <script type="application/javascript">
-      
+          $("#alertDialog").hide();
           var url_string = window.location.href;
           var url = new URL(url_string);
           var design = url.searchParams.get("design");
@@ -68,11 +75,14 @@
               if(design == value) isFound = true;
           });
           
-          if(!isFound) {
-              alert("Not found");
-              window.history.back();
-          } else {
           $(document).ready(function() {
+          if(!isFound) {
+              console.log("Not found");
+              $("#searchResult").css("display", "none");
+              $("#alertDialog").css("display", "block");
+              //window.history.back();
+          } else {
+          
               
           //href="Images/LightDarkSeries/37281-l.jpeg"
           $("#img-lg").attr("href", "Images/LightDarkSeries/"+design+"-l.jpeg");
@@ -97,9 +107,9 @@
                     duration: 300 // don't foget to change the duration also in CSS
                 }
               });
-              
-        });
           }
+            });
+          
           
       </script>
       
@@ -145,7 +155,7 @@
       </div>
       </nav>
       
-      <div class="container">
+      <div class="container" id="searchResult">
       <div class="row" id="firstSection">
           <div class="card-deck">
               <div class="col-sm-6">
@@ -153,14 +163,18 @@
                       <a class="image-popup-no-margins" id="img-lg">
                           <img class="card-img-top" id="img-sm" alt="Card image cap">
                       </a>
-                      <h5 class="card-title" style="text-align: center;" id="label"></h5>
-                      
+                      <h5 class="card-title" style="text-align: center;" id="label"></h5>                      
                   </div>
               </div>
               
               </div>
           </div>  
-      </div>     
+      </div>
+      
+      <div id="alertDialog" class="alert alert-danger" role="alert">
+          <h4 class="alert-heading">Not found!</h4>
+          <p>Sorry, we couldn't found what you are looking for.</p>
+      </div>
       
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
