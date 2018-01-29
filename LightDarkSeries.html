@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       
       <link rel="stylesheet" href="Images/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/jquery-ui.css">
       
       <link rel="stylesheet" href="css/magnific-popup.css">
 
@@ -22,7 +23,7 @@
           }
           
           #firstSection {
-              margin-top: 100px;
+              margin-top: 20px;
           }
           
           .mfp-no-margins img.mfp-img {
@@ -41,11 +42,15 @@
       </style>
       
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="js/jquery.js"></script>
+      <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
       <script src="js/jquery.magnific-popup.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="items.js"></script>
+      <script src="autocomplete.js"></script>
       
       <script type="application/javascript">
       
@@ -72,7 +77,7 @@
   </head>
   <body>
       
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
       <a class="navbar-brand" href="#">
         <img src="Images/logo.jpeg" id="brandImg">
       </a>
@@ -91,32 +96,38 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="LightDarkSeries.html">Light Dark Series</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">White Series</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Kitchen Series</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Elevation Series</a>
+                
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ContactUs.html">Contact us</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="form-inline my-2 my-lg-0" action="search.html" method="get">
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="design">
           <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
       </nav>
       
+      <div class="container">
       <div class="row" id="firstSection">
           <div class="card-deck">
               <div class="col-sm-2">
                   <div class="card">
                       <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
-                        <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
                           <h5 class="card-title">37281</h5>
-                      </div>
+                      </div-->
                   </div>
               </div>
               <div class="col-sm-2">
@@ -124,9 +135,10 @@
                       <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
                           <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
                           <h5 class="card-title">37281</h5>
-                      </div>
+                      </div-->
                   </div>
               </div>
               <div class="col-sm-2">
@@ -134,13 +146,173 @@
                       <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
                           <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
                           <h5 class="card-title">37281</h5>
-                      </div>
+                      </div-->
                   </div>
               </div>
-          </div>          
-      </div>      
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              </div>
+          </div>
+          
+          <!--div class="row">
+          <div class="card-deck">
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      
+                  </div>
+              </div>
+              
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      
+                  </div>
+              </div>
+              </div>
+          </div-->          
+      
+      </div>
+      
+      <div class="container">
+      <div class="row" id="firstSection">
+          <div class="card-deck">
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      <!--div class="card-body">
+                          <h5 class="card-title">37281</h5>
+                      </div-->
+                  </div>
+              </div>
+              </div>
+          </div>
+          
+          <!--div class="row">
+          <div class="card-deck">
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      
+                  </div>
+              </div>
+              
+              <div class="col-sm-2">
+                  <div class="card">
+                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/37281-l.jpeg">
+                          <img class="card-img-top" src="Images/LightDarkSeries/37281-sm.jpg" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;">37281</h5>
+                      
+                  </div>
+              </div>
+              </div>
+          </div-->          
+      
+      </div>
+      
+    
       
   </body>
 </html>

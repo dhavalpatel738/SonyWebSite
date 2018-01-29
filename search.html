@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="Images/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      
+      <link rel="stylesheet" href="css/magnific-popup.css">
+
+      <link rel="shortcut icon" href="Images/favicon.ico"/>
+      <title>Sony Ceramics</title>
+      
+      <style type="text/css">
+        
+          #brandImg {
+              width: 180px;
+              height:  50px;
+          }
+          
+          #firstSection {
+              margin-top: 30px;
+          }
+          
+          .mfp-no-margins img.mfp-img {
+            padding: 0;
+          }
+        
+          .mfp-no-margins .mfp-figure:after {
+            top: 0;
+            bottom: 0;
+          }
+
+          .mfp-no-margins .mfp-container {
+            padding: 0;
+          }
+        
+      </style>
+      
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <script src="js/jquery.magnific-popup.js"></script>
+      <script src="items.js"></script>
+      
+      <script type="application/javascript">
+      
+          var url_string = window.location.href;
+          var url = new URL(url_string);
+          var design = url.searchParams.get("design");
+          
+          var designs = [];
+          for(var key in items) {
+              console.log(items[key].label);
+              designs.push(items[key].label);
+          }
+          console.log(designs);
+          
+          var isFound = false;
+          $.each(designs, function(index, value) { 
+              if(design == value) isFound = true;
+          });
+          
+          if(!isFound) {
+              alert("Not found");
+              window.location = "index.html";
+          } else {
+          $(document).ready(function() {
+              
+          //href="Images/LightDarkSeries/37281-l.jpeg"
+          $("#img-lg").attr("href", "Images/LightDarkSeries/"+design+"-l.jpeg");
+          
+          //src="Images/LightDarkSeries/37281-sm.jpg" 
+          $("#img-sm").attr("src", "Images/LightDarkSeries/"+design+"-sm.jpg");
+          
+          //label
+          $("#label").html(design);
+              
+              $('.image-popup-no-margins').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300 // don't foget to change the duration also in CSS
+                }
+              });
+              
+        });
+          }
+          
+      </script>
+      
+  </head>
+  <body>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+      <a class="navbar-brand" href="#">
+        <img src="Images/logo.jpeg" id="brandImg">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gallary
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="LightDarkSeries.html">Light Dark Series</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">White Series</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Kitchen Series</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Elevation Series</a>
+                
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="search.html" method="get">
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="design">
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+      </nav>
+      
+      <div class="container">
+      <div class="row" id="firstSection">
+          <div class="card-deck">
+              <div class="col-sm-6">
+                  <div class="card">
+                      <a class="image-popup-no-margins" id="img-lg">
+                          <img class="card-img-top" id="img-sm" alt="Card image cap">
+                      </a>
+                      <h5 class="card-title" style="text-align: center;" id="label"></h5>
+                      
+                  </div>
+              </div>
+              
+              </div>
+          </div>  
+      </div>      
+  </body>
+</html>
