@@ -84,13 +84,16 @@
               }
           });
           
-          console.log(item);
           
           $(document).ready(function() {
           if(!isFound) {
               console.log("Not found");
               $("#searchResult").css("display", "none");
-              $("#alertDialog").css("display", "block");
+              //$("#exampleModal").css("display", "block");
+              $('#exampleModal').modal('show');
+              $("#goBackButton").click(function() {
+                window.history.back();  
+              });
               //window.history.back();
           } else {
           
@@ -187,10 +190,30 @@
       </div>
       
       
-      <div id="alertDialog" class="alert alert-danger" role="alert">
+      <!-- div id="alertDialog" class="alert alert-danger" role="alert">
           <h4 class="alert-heading">Not found!</h4>
           <p>Sorry, we couldn't found what you are looking for.</p>
+      </div-->
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="exampleModalLabel">Not Found!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-secondary">
+            We are not able to find what you're looking for.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" id="goBackButton">Go back</button>
+          </div>
+        </div>
       </div>
+    </div>
       
       
 
