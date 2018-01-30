@@ -11,7 +11,7 @@ var items = [
     },
     {
         label: "37283",
-        image_sm: "Images/LightDarkSeries/37281-sm.jpg",
-        image_lg: "Images/LightDarkSeries/37281-lg.jpg"
+        image_sm: "Images/LightDarkSeries/37281 HL5-sm.jpg",
+        image_lg: "Images/LightDarkSeries/37281 HL5-lg.jpg"
     }
 ]
