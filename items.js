@@ -1,26 +1,188 @@
 var items = [
-    {
-        label: "37281",
-        name: "37281",
-        image_sm: "Images/LightDarkSeries/37263 HL1.jpg",
-        image_lg: "Images/LightDarkSeries/37263 HL1.jpg"
-    },
-    {
-        label: "3001 HL1 HL2",
-        name: "3001 HL1 HL2",
-        image_sm: "Images/LightDarkSeries/37281 HL1-sm.jpg",
-        image_lg: "Images/LightDarkSeries/37281 HL1-lg.jpg"
-    },
-    {
-        label: "37281",
-        name: "dup",
-        image_sm: "Images/LightDarkSeries/3001 HL1 HL2.jpg",
-        image_lg: "Images/LightDarkSeries/3001 HL1 HL2.jpg"
-    },
-    {
-        label: "37281",
-        name: "dup",
-        image_sm: "Images/LightDarkSeries/3001 HL1 HL2.jpg",
-        image_lg: "Images/LightDarkSeries/3001 HL1 HL2.jpg"
-    }
+{
+"image_sm":"Images/ElevationSeries/375040-sm.jpg",
+"image_lg":"Images/ElevationSeries/375040-lg.jpg",
+"name":"375040",
+"label":"375040"
+},
+{
+"image_sm":"Images/ElevationSeries/375052-sm.jpg",
+"image_lg":"Images/ElevationSeries/375052-lg.jpg",
+"name":"375052",
+"label":"375052"
+},
+{
+"image_sm":"Images/ElevationSeries/375050-sm.jpg",
+"image_lg":"Images/ElevationSeries/375050-lg.jpg",
+"name":"375050",
+"label":"375050"
+},
+{
+"image_sm":"Images/ElevationSeries/375042-sm.jpg",
+"image_lg":"Images/ElevationSeries/375042-lg.jpg",
+"name":"375042",
+"label":"375042"
+},
+{
+"image_sm":"Images/ElevationSeries/375025-sm.jpg",
+"image_lg":"Images/ElevationSeries/375025-lg.jpg",
+"name":"375025",
+"label":"375025"
+},
+{
+"image_sm":"Images/ElevationSeries/375046-sm.jpg",
+"image_lg":"Images/ElevationSeries/375046-lg.jpg",
+"name":"375046",
+"label":"375046"
+},
+{
+"image_sm":"Images/ElevationSeries/375037-sm.jpg",
+"image_lg":"Images/ElevationSeries/375037-lg.jpg",
+"name":"375037",
+"label":"375037"
+},
+{
+"image_sm":"Images/ElevationSeries/375054-sm.jpg",
+"image_lg":"Images/ElevationSeries/375054-lg.jpg",
+"name":"375054",
+"label":"375054"
+},
+{
+"image_sm":"Images/ElevationSeries/375013-sm.jpg",
+"image_lg":"Images/ElevationSeries/375013-lg.jpg",
+"name":"375013",
+"label":"375013"
+},
+{
+"image_sm":"Images/ElevationSeries/375056-sm.jpg",
+"image_lg":"Images/ElevationSeries/375056-lg.jpg",
+"name":"375056",
+"label":"375056"
+},
+{
+"image_sm":"Images/ElevationSeries/375048-sm.jpg",
+"image_lg":"Images/ElevationSeries/375048-lg.jpg",
+"name":"375048",
+"label":"375048"
+},
+{
+"image_sm":"Images/ElevationSeries/375035-sm.jpg",
+"image_lg":"Images/ElevationSeries/375035-lg.jpg",
+"name":"375035",
+"label":"375035"
+},
+{
+"image_sm":"Images/ElevationSeries/375044-sm.jpg",
+"image_lg":"Images/ElevationSeries/375044-lg.jpg",
+"name":"375044",
+"label":"375044"
+},
+{
+"image_sm":"Images/ElevationSeries/375039-sm.jpg",
+"image_lg":"Images/ElevationSeries/375039-lg.jpg",
+"name":"375039",
+"label":"375039"
+},
+{
+"image_sm":"Images/ElevationSeries/375041-sm.jpg",
+"image_lg":"Images/ElevationSeries/375041-lg.jpg",
+"name":"375041",
+"label":"375041"
+},
+{
+"image_sm":"Images/ElevationSeries/375053-sm.jpg",
+"image_lg":"Images/ElevationSeries/375053-lg.jpg",
+"name":"375053",
+"label":"375053"
+},
+{
+"image_sm":"Images/ElevationSeries/375018-sm.jpg",
+"image_lg":"Images/ElevationSeries/375018-lg.jpg",
+"name":"375018",
+"label":"375018"
+},
+{
+"image_sm":"Images/ElevationSeries/375014-sm.jpg",
+"image_lg":"Images/ElevationSeries/375014-lg.jpg",
+"name":"375014",
+"label":"375014"
+},
+{
+"image_sm":"Images/ElevationSeries/375051-sm.jpg",
+"image_lg":"Images/ElevationSeries/375051-lg.jpg",
+"name":"375051",
+"label":"375051"
+},
+{
+"image_sm":"Images/ElevationSeries/375032-sm.jpg",
+"image_lg":"Images/ElevationSeries/375032-lg.jpg",
+"name":"375032",
+"label":"375032"
+},
+{
+"image_sm":"Images/ElevationSeries/375043-sm.jpg",
+"image_lg":"Images/ElevationSeries/375043-lg.jpg",
+"name":"375043",
+"label":"375043"
+},
+{
+"image_sm":"Images/ElevationSeries/375008-sm.jpg",
+"image_lg":"Images/ElevationSeries/375008-lg.jpg",
+"name":"375008",
+"label":"375008"
+},
+{
+"image_sm":"Images/ElevationSeries/375047-sm.jpg",
+"image_lg":"Images/ElevationSeries/375047-lg.jpg",
+"name":"375047",
+"label":"375047"
+},
+{
+"image_sm":"Images/ElevationSeries/375028-sm.jpg",
+"image_lg":"Images/ElevationSeries/375028-lg.jpg",
+"name":"375028",
+"label":"375028"
+},
+{
+"image_sm":"Images/ElevationSeries/375055-sm.jpg",
+"image_lg":"Images/ElevationSeries/375055-lg.jpg",
+"name":"375055",
+"label":"375055"
+},
+{
+"image_sm":"Images/ElevationSeries/375036-sm.jpg",
+"image_lg":"Images/ElevationSeries/375036-lg.jpg",
+"name":"375036",
+"label":"375036"
+},
+{
+"image_sm":"Images/ElevationSeries/375010-sm.jpg",
+"image_lg":"Images/ElevationSeries/375010-lg.jpg",
+"name":"375010",
+"label":"375010"
+},
+{
+"image_sm":"Images/ElevationSeries/375049-sm.jpg",
+"image_lg":"Images/ElevationSeries/375049-lg.jpg",
+"name":"375049",
+"label":"375049"
+},
+{
+"image_sm":"Images/ElevationSeries/375057-sm.jpg",
+"image_lg":"Images/ElevationSeries/375057-lg.jpg",
+"name":"375057",
+"label":"375057"
+},
+{
+"image_sm":"Images/ElevationSeries/375038-sm.jpg",
+"image_lg":"Images/ElevationSeries/375038-lg.jpg",
+"name":"375038",
+"label":"375038"
+},
+{
+"image_sm":"Images/ElevationSeries/375045-sm.jpg",
+"image_lg":"Images/ElevationSeries/375045-lg.jpg",
+"name":"375045",
+"label":"375045"
+}
 ]
