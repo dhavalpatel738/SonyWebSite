@@ -1,6 +1,7 @@
 $(function() {
     $( "#search" ).autocomplete({
         minLength: 0,
+        max: 5,
         source: items,
         focus: function( event, ui ) {
             $( "#search" ).val( ui.item.name );
