@@ -18,6 +18,10 @@
       
       <style type="text/css">
         
+          body{
+              background-color: black;
+          }
+          
           #brandImg {
               width: 180px;
               height:  50px;
@@ -48,6 +52,14 @@
 
           .mfp-no-margins .mfp-container {
             padding: 0;
+          }
+          
+          .card {
+              background-color: black;
+          }
+          
+          .card-title {
+              color: floralwhite;
           }
         
       </style>
@@ -98,14 +110,27 @@
           } else {
           
               
-          //href="Images/LightDarkSeries/37281-l.jpeg"
-          $("#img-lg").attr("href", item.image_lg);
+          var index = 0;
+              for(var key in items) {
+                  var temp;
+              if(design == items[key].label) {
+              temp = items[key];
+              $("#card"+index).html(function() {
+                 var htmlString = '<a class="image-popup-no-margins" id="img-lg" href="' + temp.image_lg + '">' +
+                                    '<img class="card-img-top" id="img-sm" alt="Card image cap" src="' + temp.image_sm + '">' +
+                                  '</a>' +
+                      '<h5 class="card-title" style="text-align: center;" id="label">' + design + '</h5>';
+                  return htmlString;
+              });
+              
+                  index++;
+            }
+          }
           
-          //src="Images/LightDarkSeries/37281-sm.jpg" 
-          $("#img-sm").attr("src", item.image_sm);
-          
-          //label
-          $("#label").html(design);
+                  
+              
+                 
+                  
               
               $('.image-popup-no-margins').magnificPopup({
                 type: 'image',
@@ -169,17 +194,8 @@
       </div>
       </nav>
       
-      <!--div class="container" id="searchResult">
-                  <div class="card" style="width: 10rem;">
-                      <a class="image-popup-no-margins" id="img-lg">
-                          <img class="card-img-top " id="img-sm" alt="Card image cap">
-                      </a>
-                      <h5 class="card-title" style="text-align: center;" id="label"></h5>                      
-          </div>            
-              
-      </div-->
       
-      <div id="searchResult" class="row justify-content-center">
+      <!--div id="searchResult" class="row justify-content-center">
             <div class="col-2">
                 <a class="image-popup-no-margins" id="img-lg">
                     <img class="card-img-top " id="img-sm" alt="Card image cap">
@@ -187,6 +203,43 @@
                 <h5 class="card-title" style="text-align: center;" id="label"></h5>                      
             </div>
         
+      </div-->
+      
+      <div class="container">
+      <div class="row" id="searchResult">
+          <div class="card-deck">
+              <div class="col-sm-2">
+                  <div class="card" id="card0">
+                      
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card" id="card1">
+                      
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card" id="card2">
+                      
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card" id="card3">
+                      
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card" id="card4">
+                      
+                  </div>
+              </div>
+              <div class="col-sm-2">
+                  <div class="card" id="card5">
+                
+                  </div>
+              </div>
+              </div>
+          </div>           
       </div>
       
       
