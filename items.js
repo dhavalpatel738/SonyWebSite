@@ -190,13 +190,37 @@ var items = [
     //LightDarkSeries
 {
 "image_sm":"Images/LightDarkSeries/37236 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37236 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37236 HL1-lg.jpg",
 "name":"37236",
 "label":"37236"
 },
 {
+"image_sm":"Images/LightDarkSeries/37243 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37243 HL1 HL2-lg.jpg",
+"name":"37243",
+"label":"37243"
+},
+{
+"image_sm":"Images/LightDarkSeries/37244 HL1 HL2 HL4-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37244 HL1 HL2 HL4-lg.jpg",
+"name":"37244",
+"label":"37244"
+},
+{
+"image_sm":"Images/LightDarkSeries/37244 HL3-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37244 HL3-lg.jpg",
+"name":"dup",
+"label":"37244"
+},
+{
+"image_sm":"Images/LightDarkSeries/37250 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37250 HL1 HL2-lg.jpg",
+"name":"37250",
+"label":"37250"
+},
+{
 "image_sm":"Images/LightDarkSeries/37253 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37253 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37253 HL1 HL2-lg.jpg",
 "name":"37253",
 "label":"37253"
 },
@@ -208,7 +232,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37185 HL4-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37185 HL4-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37185 HL4-lg.jpg",
 "name":"37185",
 "label":"37185"
 },
@@ -226,13 +250,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37248 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37248 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37248 HL1-lg.jpg",
 "name":"37248",
 "label":"37248"
 },
 {
 "image_sm":"Images/LightDarkSeries/37249 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37249 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37249 HL1 HL2-lg.jpg",
 "name":"37249",
 "label":"37249"
 },
@@ -262,7 +286,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37240 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37240 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37240 HL1-lg.jpg",
 "name":"37240",
 "label":"37240"
 },
@@ -280,19 +304,19 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37252 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37252 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37252 HL1 HL2-lg.jpg",
 "name":"37252",
 "label":"37252"
 },
 {
 "image_sm":"Images/LightDarkSeries/37261 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37261 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37261 HL1-lg.jpg",
 "name":"37261",
 "label":"37261"
 },
 {
 "image_sm":"Images/LightDarkSeries/37247 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37247 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37247 HL1-lg.jpg",
 "name":"37247",
 "label":"37247"
 },
@@ -316,7 +340,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37239 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37239 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37239 HL1-lg.jpg",
 "name":"37239",
 "label":"37239"
 },
@@ -339,12 +363,6 @@ var items = [
 "label":"37281"
 },
 {
-"image_sm":"Images/LightDarkSeries/37244 HL1-3-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37244 HL1-3-sm.jpg",
-"name":"37244",
-"label":"37244"
-},
-{
 "image_sm":"Images/LightDarkSeries/37114 HL3-sm.jpg",
 "image_lg":"Images/LightDarkSeries/37114 HL3-lg.jpg",
 "name":"37114",
@@ -352,13 +370,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37251 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37251 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37251 HL1 HL2-lg.jpg",
 "name":"37251",
 "label":"37251"
 },
 {
 "image_sm":"Images/LightDarkSeries/37259 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37259 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37259 HL1 HL2-lg.jpg",
 "name":"37259",
 "label":"37259"
 },
@@ -388,13 +406,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37187 HL3-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37187 HL3-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37187 HL3-lg.jpg",
 "name":"37187",
 "label":"37187"
 },
 {
 "image_sm":"Images/LightDarkSeries/37241 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37241 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37241 HL1-lg.jpg",
 "name":"37241",
 "label":"37241"
 },
@@ -418,7 +436,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37262 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37262 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37262 HL1 HL2-lg.jpg",
 "name":"37262",
 "label":"37262"
 },
@@ -436,13 +454,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37237 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37237 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37237 HL1-lg.jpg",
 "name":"37237",
 "label":"37237"
 },
 {
 "image_sm":"Images/LightDarkSeries/37256 HL1-4-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37256 HL1-4-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37256 HL1-4-lg.jpg",
 "name":"37256",
 "label":"37256"
 },
@@ -460,7 +478,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37258 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37258 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37258 HL1-lg.jpg",
 "name":"37258",
 "label":"37258"
 },
@@ -520,7 +538,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37179 HL4-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37179 HL4-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37179 HL4-lg.jpg",
 "name":"37179",
 "label":"37179"
 },
@@ -532,7 +550,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37235 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37235 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37235 HL1-lg.jpg",
 "name":"37235",
 "label":"37235"
 },
@@ -544,13 +562,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37257 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37257 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37257 HL1-lg.jpg",
 "name":"37257",
 "label":"37257"
 },
 {
 "image_sm":"Images/LightDarkSeries/37246 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37246 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37246 HL1-lg.jpg",
 "name":"37246",
 "label":"37246"
 },
@@ -580,7 +598,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37238 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37238 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37238 HL1-lg.jpg",
 "name":"37238",
 "label":"37238"
 }
