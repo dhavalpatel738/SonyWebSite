@@ -226,7 +226,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37263 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37263 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37263 HL1-lg.jpg",
 "name":"37263",
 "label":"37263"
 },
@@ -262,7 +262,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37272 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37272 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37272 HL1-lg.jpg",
 "name":"37272",
 "label":"37272"
 },
@@ -328,7 +328,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37273 HL1-3-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37273 HL1-3-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37273 HL1-3-lg.jpg",
 "name":"37273",
 "label":"37273"
 },
@@ -352,8 +352,14 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37275 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37275 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37275 HL1-lg.jpg",
 "name":"37275",
+"label":"37275"
+},
+{
+"image_sm":"Images/LightDarkSeries/37275 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37275 HL2-lg.jpg",
+"name":"dup",
 "label":"37275"
 },
 {
@@ -394,13 +400,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37270 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37270 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37270 HL1 HL2-lg.jpg",
 "name":"37270",
 "label":"37270"
 },
 {
 "image_sm":"Images/LightDarkSeries/37265 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37265 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37265 HL1 HL2-lg.jpg",
 "name":"37265",
 "label":"37265"
 },
@@ -496,13 +502,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37264 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37264 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37264 HL1 HL2-lg.jpg",
 "name":"37264",
 "label":"37264"
 },
 {
 "image_sm":"Images/LightDarkSeries/37274 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37274 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37274 HL1-lg.jpg",
 "name":"37274",
 "label":"37274"
 },
@@ -520,13 +526,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37266 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37266 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37266 HL1 HL2-lg.jpg",
 "name":"37266",
 "label":"37266"
 },
 {
 "image_sm":"Images/LightDarkSeries/37269 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37269 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37269 HL1 HL2-lg.jpg",
 "name":"37269",
 "label":"37269"
 },
@@ -556,7 +562,7 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37268 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37268 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37268 HL1 HL2-lg.jpg",
 "name":"37268",
 "label":"37268"
 },
@@ -574,13 +580,13 @@ var items = [
 },
 {
 "image_sm":"Images/LightDarkSeries/37271 HL1-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37271 HL1-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37271 HL1-lg.jpg",
 "name":"37271",
 "label":"37271"
 },
 {
 "image_sm":"Images/LightDarkSeries/37267 HL1 HL2-sm.jpg",
-"image_lg":"Images/LightDarkSeries/37267 HL1 HL2-sm.jpg",
+"image_lg":"Images/LightDarkSeries/37267 HL1 HL2-lg.jpg",
 "name":"37267",
 "label":"37267"
 },
@@ -601,5 +607,162 @@ var items = [
 "image_lg":"Images/LightDarkSeries/37238 HL1-lg.jpg",
 "name":"37238",
 "label":"37238"
+}, 
+    //Kitchen Series
+{
+"image_sm":"Images/KitchenSeries/37013 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37013 HL1 HL2-lg.jpg",
+"name":"37013",
+"label":"37013"
+},
+{
+"image_sm":"Images/KitchenSeries/37025 H3 H4-sm.jpg",
+"image_lg":"Images/KitchenSeries/37025 H3 H4-lg.jpg",
+"name":"dup",
+"label":"37025"
+},
+{
+"image_sm":"Images/KitchenSeries/37024 HL1-sm.jpg",
+"image_lg":"Images/KitchenSeries/37024 HL1-lg.jpg",
+"name":"37024",
+"label":"37024"
+},
+{
+"image_sm":"Images/KitchenSeries/37014 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37014 HL1 HL2-lg.jpg",
+"name":"37014",
+"label":"37014"
+},
+{
+"image_sm":"Images/KitchenSeries/37008 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37008 HL1 HL2-lg.jpg",
+"name":"37008",
+"label":"37008"
+},
+{
+"image_sm":"Images/KitchenSeries/37026 HL1 HL2 HL3-sm.jpg",
+"image_lg":"Images/KitchenSeries/37026 HL1 HL2 HL3-lg.jpg",
+"name":"37026",
+"label":"37026"
+},
+{
+"image_sm":"Images/KitchenSeries/37012 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37012 HL1 HL2-lg.jpg",
+"name":"37012",
+"label":"37012"
+},
+{
+"image_sm":"Images/KitchenSeries/37010 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37010 HL1 HL2-lg.jpg",
+"name":"37010",
+"label":"37010"
+},
+{
+"image_sm":"Images/KitchenSeries/37001 37002 37003 37015-sm.jpg",
+"image_lg":"Images/KitchenSeries/37001 37002 37003 37015-lg.jpg",
+"name":"37001 37002 37003 37015",
+"label":"37001 37002 37003 37015"
+},
+{
+"image_sm":"Images/KitchenSeries/37018 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37018 HL1 HL2-lg.jpg",
+"name":"37018",
+"label":"37018"
+},
+{
+"image_sm":"Images/KitchenSeries/37004 37005 37006-sm.jpg",
+"image_lg":"Images/KitchenSeries/37004 37005 37006-lg.jpg",
+"name":"37004 37005 37006",
+"label":"37004 37005 37006"
+},
+{
+"image_sm":"Images/KitchenSeries/37022 HL4-7-sm.jpg",
+"image_lg":"Images/KitchenSeries/37022 HL4-7-lg.jpg",
+"name":"dup",
+"label":"37022"
+},
+{
+"image_sm":"Images/KitchenSeries/37243 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37243 HL1 HL2-lg.jpg",
+"name":"37243",
+"label":"37243"
+},
+{
+"image_sm":"Images/KitchenSeries/37016 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37016 HL1 HL2-lg.jpg",
+"name":"37016",
+"label":"37016"
+},
+{
+"image_sm":"Images/KitchenSeries/37019 HL1-sm.jpg",
+"image_lg":"Images/KitchenSeries/37019 HL1-lg.jpg",
+"name":"37019",
+"label":"37019"
+},
+{
+"image_sm":"Images/KitchenSeries/37017-sm.jpg",
+"image_lg":"Images/KitchenSeries/37017-lg.jpg",
+"name":"37017",
+"label":"37017"
+},
+{
+"image_sm":"Images/KitchenSeries/37007 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37007 HL2-lg.jpg",
+"name":"37007",
+"label":"37007"
+},
+{
+"image_sm":"Images/KitchenSeries/37022 HL1 HL2 HL3-sm.jpg",
+"image_lg":"Images/KitchenSeries/37022 HL1 HL2 HL3-lg.jpg",
+"name":"37022",
+"label":"37022"
+},
+{
+"image_sm":"Images/KitchenSeries/37021-sm.jpg",
+"image_lg":"Images/KitchenSeries/37021-lg.jpg",
+"name":"37021",
+"label":"37021"
+},
+{
+"image_sm":"Images/KitchenSeries/37023 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37023 HL1 HL2-lg.jpg",
+"name":"37023",
+"label":"37023"
+},
+{
+"image_sm":"Images/KitchenSeries/37015-sm.jpg",
+"image_lg":"Images/KitchenSeries/37015-lg.jpg",
+"name":"37015",
+"label":"37015"
+},
+{
+"image_sm":"Images/KitchenSeries/37025 H1 H2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37025 H1 H2-lg.jpg",
+"name":"37025",
+"label":"37025"
+},
+{
+"image_sm":"Images/KitchenSeries/37009 HL1-sm.jpg",
+"image_lg":"Images/KitchenSeries/37009 HL1-lg.jpg",
+"name":"37009",
+"label":"37009"
+},
+{
+"image_sm":"Images/KitchenSeries/37011-sm.jpg",
+"image_lg":"Images/KitchenSeries/37011-lg.jpg",
+"name":"37011",
+"label":"37011"
+},
+{
+"image_sm":"Images/KitchenSeries/37020 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37020 HL1 HL2-lg.jpg",
+"name":"37020",
+"label":"37020"
+},
+{
+"image_sm":"Images/KitchenSeries/37027 HL1 HL2-sm.jpg",
+"image_lg":"Images/KitchenSeries/37027 HL1 HL2-lg.jpg",
+"name":"37027",
+"label":"37027"
 }
 ]
