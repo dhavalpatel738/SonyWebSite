@@ -11,7 +11,7 @@
 
         if (!$_POST["content"]) {
 
-            $error .= "The content field is required.<br>";
+            $error .= "The message field is required.<br>";
 
         }
 
@@ -36,7 +36,7 @@
 
             $headers = "From: ".$_POST['email'];
 
-            /*if (mail($emailTo, $subject, $content, $headers)) {
+            if (mail($emailTo, $subject, $content, $headers)) {
 
                 $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, we\'ll get back to you ASAP!</div>';
 
@@ -45,7 +45,7 @@
 
                 $error = '<div class="alert alert-danger" role="alert"><p><strong>Your message couldn\'t be sent - please try again later</div>';
 
-            }*/
+            }
         }
     }
 
@@ -246,7 +246,7 @@
 
               if ($("#inputText").val() == "") {
 
-                  error += "The Message field is required.<br>"
+                  error += "The message field is required.<br>"
 
               }
 
