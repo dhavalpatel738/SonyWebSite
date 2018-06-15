@@ -3,19 +3,19 @@
   <head>
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113301141-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113301141-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'UA-113301141-1');
-    </script>
+          gtag('config', 'UA-113301141-1');
+        </script>
 
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Product search for wall tiles including light dark series, kitchen tiles and elevation series">
-      <meta name="keywords" content="ceramic wall tiles, wall tiles, ceramic tiles, tiles, kitchen tiles, bathroom tiles, parking tiles">
+      <meta name="description" content="Give your wall new look and feel by our poster tiles collection">
+      <meta name="keywords" content="ceramic wall tiles in morbi, wall tiles, ceramic tiles, tiles, kitchen tiles, bathroom tiles, parking tiles, poster tiles in morbi">
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -24,9 +24,8 @@
 
       <link rel="stylesheet" href="css/magnific-popup.css">
 
-
       <link rel="shortcut icon" href="Images/favicon.ico"/>
-      <title>Sony Ceramics | Gallary</title>
+      <title>Poster Tiles | Sony Ceramics</title>
 
       <style type="text/css">
 
@@ -39,18 +38,9 @@
               height:  50px;
           }
 
-          #searchResult {
-
-          }
-
-          #img-sm {
-              max-width: : 120px;
-              max-height: 400px;
+          #firstSection {
               margin-top: 20px;
-          }
-
-          #alertDialog {
-              display: none;
+              margin-bottom: 5px;
           }
 
           .mfp-no-margins img.mfp-img {
@@ -83,8 +73,8 @@
       </style>
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
       <script src="js/jquery.js"></script>
+      <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -94,57 +84,8 @@
       <script src="autocomplete.js"></script>
 
       <script type="application/javascript">
-          $("#alertDialog").hide();
-          var url_string = window.location.href;
-          var url = new URL(url_string);
-          var design = url.searchParams.get("design");
-
-          var designs = [];
-          for(var key in items) {
-              designs.push(items[key].label);
-          }
-          console.log(designs);
-
-          var isFound = false;
-          var item;
-          $.each(designs, function(index, value) {
-              if(design == value) {
-                  isFound = true;
-                  item = items[index];
-              }
-          });
-
 
           $(document).ready(function() {
-          if(!isFound) {
-              console.log("Not found");
-              $("#searchResult").css("display", "none");
-              //$("#exampleModal").css("display", "block");
-              $('#exampleModal').modal('show');
-              $("#goBackButton").click(function() {
-                window.history.back();
-              });
-              //window.history.back();
-          } else {
-
-
-          var index = 0;
-              for(var key in items) {
-                  var temp;
-              if(design == items[key].label) {
-              temp = items[key];
-              $("#card"+index).html(function() {
-                 var htmlString = '<a class="image-popup-no-margins" id="img-lg" href="' + temp.image_lg + '">' +
-                                    '<img class="card-img-top" id="img-sm" alt="Card image cap" src="' + temp.image_sm + '">' +
-                                  '</a>' +
-                      '<h5 class="card-title" style="text-align: center;" id="label">' + design + '</h5>';
-                  return htmlString;
-              });
-
-                  index++;
-            }
-          }
-
               $('.image-popup-no-margins').magnificPopup({
                 type: 'image',
                 closeOnContentClick: true,
@@ -154,7 +95,7 @@
                 image: {
                     verticalFit: true
                 },
-                gallery: {
+                  gallery: {
                     enabled: true,
                     navigateByImgClick: true,
                     preload: [0,1] // Will preload 0 - before current, and 1 after the current image
@@ -164,9 +105,8 @@
                     duration: 300 // don't foget to change the duration also in CSS
                 }
               });
-          }
-            });
 
+        });
 
       </script>
 
@@ -192,14 +132,13 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="LightDarkSeries.html">Light Dark Series</a>
-                <!--div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">White Series</a-->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="KitchenSeries.html">Kitchen Series</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="ElevationSeries.html">Elevation Series</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="PosterTiles.html">Poster Tiles</a
+
             </div>
           </li>
           <li class="nav-item">
@@ -213,85 +152,53 @@
       </div>
       </nav>
 
-
-      <!--div id="searchResult" class="row justify-content-center">
-            <div class="col-2">
-                <a class="image-popup-no-margins" id="img-lg">
-                    <img class="card-img-top " id="img-sm" alt="Card image cap">
-                </a>
-                <h5 class="card-title" style="text-align: center;" id="label"></h5>
-            </div>
-
-      </div-->
-
+      <!-- Row 1 -->
       <div class="container">
-      <div class="row" id="searchResult">
-          <div class="card-deck">
-              <div class="col-sm-2">
-                  <div class="card" id="card0">
+        <div class="row" id="firstSection">
+            <div class="card-deck">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <a class="image-popup-no-margins" href="Images/LightDarkSeries/37280-lg.jpg">
+                            <img class="card-img-top" src="Images/LightDarkSeries/37280-sm.jpg" alt="Card image cap">
+                        </a>
+                        <h5 class="card-title" style="text-align: center;">37280</h5>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2">
+                    <div class="card">
+                        <a class="image-popup-no-margins" href="Images/LightDarkSeries/37276%20HL1-lg.jpg">
+                            <img class="card-img-top" src="Images/LightDarkSeries/37276%20HL1-sm.jpg" alt="Card image cap">
+                        </a>
+                        <h5 class="card-title" style="text-align: center;">37276</h5>
 
-                  </div>
-              </div>
-              <div class="col-sm-2">
-                  <div class="card" id="card1">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <a class="image-popup-no-margins" href="Images/LightDarkSeries/37276%20HL2-lg.jpg">
+                            <img class="card-img-top" src="Images/LightDarkSeries/37276%20HL2-sm.jpg" alt="Card image cap">
+                        </a>
+                        <h5 class="card-title" style="text-align: center;">37276</h5>
 
-                  </div>
-              </div>
-              <div class="col-sm-2">
-                  <div class="card" id="card2">
+                    </div>
+                </div>
 
-                  </div>
-              </div>
-              <div class="col-sm-2">
-                  <div class="card" id="card3">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <a class="image-popup-no-margins" href="Images/LightDarkSeries/37276%20HL3-lg.jpg">
+                            <img class="card-img-top" src="Images/LightDarkSeries/37276%20HL3-sm.jpg" alt="Card image cap">
+                        </a>
+                        <h5 class="card-title" style="text-align: center;">37276</h5>
 
-                  </div>
-              </div>
-              <div class="col-sm-2">
-                  <div class="card" id="card4">
-
-                  </div>
-              </div>
-              <div class="col-sm-2">
-                  <div class="card" id="card5">
-
-                  </div>
-              </div>
-              </div>
-          </div>
-      </div>
-
-
-      <!-- div id="alertDialog" class="alert alert-danger" role="alert">
-          <h4 class="alert-heading">Not found!</h4>
-          <p>Sorry, we couldn't found what you are looking for.</p>
-      </div-->
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-danger" id="exampleModalLabel">Not Found!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-secondary">
-            We are not able to find what you're looking for.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-secondary" id="goBackButton">Go back</button>
-          </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #000000;">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">

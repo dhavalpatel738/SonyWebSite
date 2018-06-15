@@ -130,6 +130,8 @@
                 <a class="dropdown-item" href="KitchenSeries.html">Kitchen Series</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="ElevationSeries.html">Elevation Series</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="PosterTiles.html">Poster Tiles</a
             </div>
           </li>
           <li class="nav-item active">
@@ -200,7 +202,7 @@
     </div>
     </div>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
