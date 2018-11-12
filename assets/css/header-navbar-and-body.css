@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+#brandImg {
+    width: 180px;
+    height:  50px;
+}
+
+.firstSection {
+    /* margin: 20px auto; */
+
+}
+
+.card {
+  width: 30vh;
+}
+
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+.card {
+    background-color: black;
+}
+
+.card-title {
+    color: floralwhite;
+}
+
+.ui-autocomplete {
+  max-height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
