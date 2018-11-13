@@ -14,4 +14,8 @@
   define('HEADER_NAVBAR_REDIRECTS', LOCAL_PATH_ROOT.'/components/php/header-navbar-redirects.php');
   define('GREETINGS', 'HELLO WORLD!!');
 
+// -----------------------------------------------------------------------------
+// IMAGES FOLDER PATHS
+// -----------------------------------------------------------------------------
+  define('LIGHTDARK_IMAGES_DIR', LOCAL_PATH_ROOT."/Images/LightDarkSeries");
 ?>
