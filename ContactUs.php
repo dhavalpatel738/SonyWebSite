@@ -185,7 +185,7 @@
 
             <h5 class="card-title"><i class="fa fa-address-book" aria-hidden="true"></i> Address</h5>
             <p class="card-text"><span style="color: red;"><strong>SONY </strong></span>Ceramics, Matel Road, Dhuva-363622</p>
-            <p class="card-text"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> office@sonyceramics.com</p>
+            <p class="card-text"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> office [at] sonyceramics [dot] com</p>
 
         </div>
       </div>
