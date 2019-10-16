@@ -1,4 +1,16 @@
 <?php
+    /**
+    * Encode an email address to display on your website
+    */
+    function encode_email_address( $email ) {
+     $output = '';
+     for ($i = 0; $i < strlen($email); $i++)
+     {
+          $output .= '&#'.ord($email[$i]).';';
+     }
+     return $output;
+    }
+
     $error = ""; $successMessage = "";
 
     if ($_POST) {
@@ -185,7 +197,12 @@
 
             <h5 class="card-title"><i class="fa fa-address-book" aria-hidden="true"></i> Address</h5>
             <p class="card-text"><span style="color: red;"><strong>SONY </strong></span>Ceramics, Matel Road, Dhuva-363622</p>
-            <p class="card-text"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> office [at] sonyceramics [dot] com</p>
+            <p class="card-text"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+              <?php
+              $encodedEmail = encode_email_address( 'office@sonyceramics.com' );
+              printf('%s', $encodedEmail);
+              ?>
+            </p>
 
         </div>
       </div>
