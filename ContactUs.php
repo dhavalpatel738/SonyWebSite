@@ -211,7 +211,7 @@
           <p class="card-text"><i class="fa fa-download" aria-hidden="true"></i> Get a copy of SATYAM digital wall tiles catalogue here</p>
           <p class="card-text">
               <a href="Sony ceramics 15x10 catalogue.pdf" download>
-                <img style="width: 250px; height: 80px;" src="Images/download.jpg">
+                <img src="Images/downloadNow.png">
               </a>
           </p>
 
