@@ -186,7 +186,7 @@
         <label for="inputText">Message <span style="color: red;">*</span></label>
         <textarea class="form-control" id="inputText" name="content" rows="7"></textarea>
       </div>
-      <button type="submit" id="contact-form-submit" class="btn btn-primary">Submit</button>
+      <button type="submit" id="contact-form-submit" class="btn btn-dark">Submit</button>
     </form>
   </div><hr>
 
