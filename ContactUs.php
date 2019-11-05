@@ -84,10 +84,10 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="Images/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/jquery-ui.css">
 
-      <link rel="shortcut icon" href="Images/favicon.ico"/>
+      <link rel="shortcut icon" href="assets/images/favicon.ico"/>
       <title>Sony Ceramics | Contact us</title>
 
       <style type="text/css">
@@ -208,10 +208,14 @@
       </div>
       <div class="card">
         <div class="card-body">
-          <p class="card-text"><i class="fa fa-download" aria-hidden="true"></i> Get a copy of SATYAM digital wall tiles catalogue here</p>
+          <h5 class="card-title">
+            Get a copy of Product Catalogue here
+          </h5>
           <p class="card-text">
-              <a href="Sony ceramics 15x10 catalogue.pdf" download>
-                <img src="Images/downloadNow.png">
+              <a href="Sony ceramics 15x10 catalogue.pdf" class="btn btn-dark btn-lg" download>
+                <i class="fa fa-cloud-download"></i>
+                Download Now
+                <!-- img src="Images/downloadNow.png" -->
               </a>
           </p>
 
