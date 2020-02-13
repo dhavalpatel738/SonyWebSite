@@ -15,6 +15,8 @@ body{
 
 .card {
   width: 30vh;
+  max-height: 40vh;
+  background-color: black;
 }
 
 .mfp-no-margins img.mfp-img {
@@ -28,10 +30,6 @@ body{
 
 .mfp-no-margins .mfp-container {
   padding: 0;
-}
-
-.card {
-    background-color: black;
 }
 
 .card-title {
