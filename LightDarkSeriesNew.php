@@ -47,7 +47,7 @@
                       <a class="image-popup-no-margins" href="Images/LightDarkSeries/'.$item.'">
                           <img class="card-img-top" src="Images/LightDarkSeries/'.$item.'" alt="Card image cap">
                       </a>
-                      <h5 class="card-text" style="text-align: left;">'.explode(" ", $item)[0].'</h5>
+                      <h5 class="card-text" style="text-align: left;">'.explode(" ", str_replace("-"," ",$item))[0].'</h5>
                   </div>
             ';
             echo '</div>';
