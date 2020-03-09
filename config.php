@@ -17,5 +17,7 @@
 // -----------------------------------------------------------------------------
 // IMAGES FOLDER PATHS
 // -----------------------------------------------------------------------------
-  define('LIGHTDARK_IMAGES_DIR', LOCAL_PATH_ROOT."/Images/LightDarkSeries");
+  define('LIGHTDARK_IMAGES_DIR', RELATIVE_PATH_ROOT."../images/lightDarkSeries");
+  define('ELEVATION_IMAGES_DIR', RELATIVE_PATH_ROOT."../images/elevationSeries");
+  define('KITCHEN_IMAGES_DIR', RELATIVE_PATH_ROOT."../images/kitchenSeries");
 ?>

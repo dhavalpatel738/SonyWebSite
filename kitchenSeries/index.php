@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--  IMPORT CONFIG FILE -->
-      <?php include 'config.php'; ?>
+      <?php include '../config.php'; ?>
       <?php
         echo file_get_contents(HEADER);
       ?>
@@ -21,14 +21,11 @@
           return $nothidden;
       }
 
-      $directory = LIGHTDARK_IMAGES_DIR;
+      $directory = KITCHEN_IMAGES_DIR;
       $items = not_hidden($directory);
       //rsort($items);
       $numOfFiles = count($items);
 
-    ?>
-
-    <?php
 
     $numberOfColumns = 6;
     $bootstrapColWidth = 12 / $numberOfColumns ;
@@ -41,11 +38,12 @@
           if(strcmp(explode(".", $item)[1],"jpg") == 0) {
             //strcmp returns 0 on equal
             //echo '<div class="col-sm-'.$bootstrapColWidth.'">';
+            $temp = $directory."/".$item;
             echo '<div class="col-sm-2 mb-3">';
             echo '
                   <div class="card">
-                      <a class="image-popup-no-margins" href="Images/LightDarkSeries/'.$item.'">
-                          <img class="card-img-top" src="Images/LightDarkSeries/'.$item.'" alt="Card image cap">
+                      <a class="image-popup-no-margins" href="'.$temp.'">
+                          <img class="card-img-top" src="'.$temp.'" alt="Card image cap">
                       </a>
                       <h5 class="card-text" style="text-align: left;">'.explode(" ", str_replace("-"," ",$item))[0].'</h5>
                   </div>

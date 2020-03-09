@@ -84,10 +84,10 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="Images/font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="/assets/images/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
-      <link rel="shortcut icon" href="Images/favicon.ico"/>
+      <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
       <title>Sony Ceramics | Contact us</title>
 
       <style type="text/css">
@@ -118,8 +118,8 @@
   <body>
 
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-      <a class="navbar-brand" href="index.html">
-        <img src="Images/logo.jpeg" id="brandImg">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/images/logo.jpeg" id="brandImg">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -128,29 +128,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Gallary
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="LightDarkSeries.html">Light Dark Series</a>
+                <a class="dropdown-item" href="/lightDarkSeries/">Light Dark Series</a>
                 <!--div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">White Series</a-->
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="KitchenSeries.html">Kitchen Series</a>
+                <a class="dropdown-item" href="/kitchenSeries/">Kitchen Series</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="ElevationSeries.html">Elevation Series</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="PosterTiles.html">Poster Tiles</a
+                <a class="dropdown-item" href="/elevationSeries/">Elevation Series</a>
+
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="ContactUs.php">Contact us</a>
+            <a class="nav-link" href="/contactUs/">Contact us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="online-catalogue/">View Catalogue</a>
+            <a class="nav-link" href="/onlineCatalogue/">View Catalogue</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="search.html" method="get">
@@ -162,7 +161,7 @@
 
       <div class="container-fluid">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.1585939927595!2d70.9426583140378!3d22.72234593318581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395991053cecc553%3A0x1c65fddaf5b3a77d!2sSony+Ceramics!5e0!3m2!1sen!2sin!4v1516529918104" width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen></iframe>
-    </div>
+      </div>
 
       <!-- Contact Form -->
       <div class="container">
@@ -240,15 +239,15 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="js/jquery.js"></script>
+      <script src="/assets/js/jquery.js"></script>
       <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
         KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <script src="js/jquery-ui.js"></script>
-      <script src="items.js"></script>
-      <script src="autocomplete.js"></script>
+      <script src="/assets/js/jquery-ui.js"></script>
+      <script src="/items.js"></script>
+      <script src="/autocomplete.js"></script>
 
       <script type="text/javascript">
 
