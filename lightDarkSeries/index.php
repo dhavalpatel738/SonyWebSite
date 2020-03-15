@@ -43,7 +43,7 @@
             echo '
                   <div class="card">
                       <a class="image-popup-no-margins" href="'.$temp.'">
-                          <img class="card-img-top" src="'.$temp.'" alt="Card image cap">
+                          <img class="card-img-top" src="'.$temp.'" alt="tile image cap">
                       </a>
                       <h5 class="card-text" style="text-align: left;">'.explode(" ", str_replace("-"," ",$item))[0].'</h5>
                   </div>
