@@ -21,17 +21,23 @@
           return $nothidden;
       }
 
+      //return filename of images
+      function get_fileName($var) {
+        $fileNameArray = array_splice(explode(" ",explode(".", str_replace("-"," ",$var))[0]),0,2);
+        return implode(" ",$fileNameArray);
+      }
+
       $directory = KITCHEN_IMAGES_DIR;
       $items = not_hidden($directory);
       //rsort($items);
       $numOfFiles = count($items);
 
 
-    $numberOfColumns = 6;
-    $bootstrapColWidth = 12 / $numberOfColumns ;
+      $numberOfColumns = 6;
+      $bootstrapColWidth = 12 / $numberOfColumns ;
 
-    //$arrayChunks = array_chunk($items, $numberOfColumns);
-    //foreach($arrayChunks as $items) {
+      //$arrayChunks = array_chunk($items, $numberOfColumns);
+      //foreach($arrayChunks as $items) {
         echo '<div class="row mx-4">';
         // echo '<div class="card-deck">';
         foreach($items as $item) {
@@ -45,7 +51,7 @@
                       <a class="image-popup-no-margins" href="'.$temp.'">
                           <img class="card-img-top" src="'.$temp.'" alt="Card image cap">
                       </a>
-                      <h5 class="card-text" style="text-align: left;">'.explode(" ", str_replace("-"," ",$item))[0].'</h5>
+                      <h5 class="card-text" style="text-align: left;">'.get_FileName($item).'</h5>
                   </div>
             ';
             echo '</div>';
