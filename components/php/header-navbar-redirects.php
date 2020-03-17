@@ -16,15 +16,15 @@
         Gallary
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <h6 class="ml-1">
+            <span class="badge badge-danger text-wrap text-justify">RED BODY 375X250 mm</span>
+          </h6>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/lightDarkSeries/">Light Dark Series</a>
-          <!--div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">White Series</a-->
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/kitchenSeries/">Kitchen Series</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/elevationSeries/">Elevation Series</a>
-          <!-- <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="PosterTiles.html">Poster Tiles</a -->
 
       </div>
     </li>
