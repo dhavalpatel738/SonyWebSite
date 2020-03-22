@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113301141-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -19,13 +18,13 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="Images/font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="/images/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/css/jquery-ui.css">
 
-      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="/assets/css/magnific-popup.css">
 
 
-      <link rel="shortcut icon" href="Images/favicon.ico"/>
+      <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
       <title>Sony Ceramics | Gallary</title>
 
       <style type="text/css">
@@ -84,15 +83,21 @@
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
-      <script src="js/jquery.js"></script>
+      <script src="/assets/js/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <script src="js/jquery.magnific-popup.js"></script>
-      <script src="js/jquery-ui.js"></script>
-      <script src="items.js"></script>
+      <script src="/assets/js/jquery.magnific-popup.js"></script>
+      <script src="/assets/js/jquery-ui.js"></script>
       <script src="autocomplete.js"></script>
+      <script type="text/javascript">
+        //include the   'async':false   parameter or the object data won't get captured when loading
+        var json = $.getJSON({'url': "items.json", 'async': false});
 
+        //The next line of code will filter out all the unwanted data from the object.
+        var items = JSON.parse(json.responseText);
+
+      </script>
       <script type="application/javascript">
           $("#alertDialog").hide();
           var url_string = window.location.href;
@@ -101,7 +106,7 @@
 
           var designs = [];
           for(var key in items) {
-              designs.push(items[key].label);
+            designs.push(items[key].label);
           }
           console.log(designs);
 
@@ -126,16 +131,17 @@
               });
               //window.history.back();
           } else {
-
+            console.log("Found");
 
           var index = 0;
               for(var key in items) {
                   var temp;
+                  console.log(items[key]);
               if(design == items[key].label) {
               temp = items[key];
               $("#card"+index).html(function() {
-                 var htmlString = '<a class="image-popup-no-margins" id="img-lg" href="' + temp.image_lg + '">' +
-                                    '<img class="card-img-top" id="img-sm" alt="Card image cap" src="' + temp.image_sm + '">' +
+                 var htmlString = '<a class="image-popup-no-margins" id="img-lg" href="' + temp.image_url + '">' +
+                                    '<img class="card-img-top" id="img-sm" alt="Card image cap" src="' + temp.image_url + '">' +
                                   '</a>' +
                       '<h5 class="card-title" style="text-align: center;" id="label">' + design + '</h5>';
                   return htmlString;
@@ -216,17 +222,6 @@
       </div>
       </nav>
 
-
-      <!--div id="searchResult" class="row justify-content-center">
-            <div class="col-2">
-                <a class="image-popup-no-margins" id="img-lg">
-                    <img class="card-img-top " id="img-sm" alt="Card image cap">
-                </a>
-                <h5 class="card-title" style="text-align: center;" id="label"></h5>
-            </div>
-
-      </div-->
-
       <div class="container">
       <div class="row" id="searchResult">
           <div class="card-deck">
@@ -263,12 +258,6 @@
               </div>
           </div>
       </div>
-
-
-      <!-- div id="alertDialog" class="alert alert-danger" role="alert">
-          <h4 class="alert-heading">Not found!</h4>
-          <p>Sorry, we couldn't found what you are looking for.</p>
-      </div-->
 
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">

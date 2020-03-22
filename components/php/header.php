@@ -30,7 +30,6 @@
 
 <script src="/assets/js/jquery.magnific-popup.js"></script>
 <script src="/assets/js/jquery-ui.js"></script>
-<script src="/items.js"></script>
 <script src="/autocomplete.js"></script>
 
 <script type="application/javascript">

@@ -2,7 +2,7 @@ $(function() {
     $( "#search" ).autocomplete({
         minLength: 0,
         max: 5,
-        source: items,
+        source: 'items.json',
         focus: function( event, ui ) {
             $( "#search" ).val( ui.item.name );
                 return false;
@@ -26,4 +26,3 @@ $(function() {
         return false;
     });
 } );
-
