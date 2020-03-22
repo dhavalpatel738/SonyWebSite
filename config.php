@@ -2,9 +2,10 @@
 // -----------------------------------------------------------------------------
 // DEFINE ROOT PATHS
 // -----------------------------------------------------------------------------
-  define('RELATIVE_PATH_ROOT', '');
-  define('LOCAL_PATH_ROOT', $_SERVER["DOCUMENT_ROOT"]);
 
+  //$_SERVER["DOCUMENT_ROOT"] = '';
+  define('RELATIVE_PATH_ROOT', '');
+  define('LOCAL_PATH_ROOT', $_SERVER["DOCUMENT_ROOT"]); // for server-side
 
 // -----------------------------------------------------------------------------
 // COMPONENTS PATHS
@@ -17,7 +18,7 @@
 // -----------------------------------------------------------------------------
 // IMAGES FOLDER PATHS
 // -----------------------------------------------------------------------------
-  define('LIGHTDARK_IMAGES_DIR', RELATIVE_PATH_ROOT."../images/lightDarkSeries");
-  define('ELEVATION_IMAGES_DIR', RELATIVE_PATH_ROOT."../images/elevationSeries");
-  define('KITCHEN_IMAGES_DIR', RELATIVE_PATH_ROOT."../images/kitchenSeries");
+  define('LIGHTDARK_IMAGES_DIR', '../images/lightDarkSeries');
+  define('ELEVATION_IMAGES_DIR', '../images/elevationSeries');
+  define('KITCHEN_IMAGES_DIR', '../images/kitchenSeries');
 ?>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--  IMPORT CONFIG FILE -->
-      <?php include '../config.php'; ?>
+      <?php include '../config.php';?>
       <?php
         echo file_get_contents(HEADER);
       ?>
@@ -31,7 +31,7 @@
       $items = not_hidden($directory);
       //rsort($items);
       $numOfFiles = count($items);
-
+      
 
       $numberOfColumns = 6;
       $bootstrapColWidth = 12 / $numberOfColumns ;

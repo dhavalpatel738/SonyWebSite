@@ -35,7 +35,7 @@
       <a class="nav-link" href="/onlineCatalogue/">View Catalogue</a>
     </li>
   </ul>
-  <form class="form-inline my-2 my-lg-0" action="/search.php" method="get">
+  <form class="form-inline my-2 my-lg-0" action="/search/" method="get">
     <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search Design" aria-label="Search" name="design">
     <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
   </form>

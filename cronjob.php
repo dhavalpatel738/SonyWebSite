@@ -24,7 +24,7 @@
 
                 $path = $f->getPathname();
                 $name = get_fileName($f->getFileName());
-
+                // echo $path;
                 if ($f->isFile()) {
                         $data[] = [ 'image_url' => $path,
                                     'name' => $name,
@@ -36,11 +36,16 @@
         return $data;
 }
 
-      $data = json_encode(dir_to_array('images/lightDarkSeries'));
-      echo $data;
+
+      $allData = dir_to_array('images/lightDarkSeries');
+      $allData = array_merge($allData, dir_to_array('images/elevationSeries'));
+      $allData = array_merge($allData, dir_to_array('images/kitchenSeries'));
+
+      $items = json_encode($allData);
+      echo $items;
 
       $fp = fopen('items.json', 'w');
-      fwrite($fp, $data);
+      fwrite($fp, $items);
       fclose($fp);
 
 

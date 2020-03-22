@@ -30,11 +30,11 @@
 
 <script src="/assets/js/jquery.magnific-popup.js"></script>
 <script src="/assets/js/jquery-ui.js"></script>
-<script src="/autocomplete.js"></script>
+<script src="/assets/js/autocomplete.js"></script>
 
 <script type="application/javascript">
 
-    $(document).ready(function() {
+     $(document).ready(function() {
         $('.image-popup-no-margins').magnificPopup({
           type: 'image',
           closeOnContentClick: true,
@@ -55,6 +55,6 @@
           }
         });
 
-  });
+   });
 
 </script>

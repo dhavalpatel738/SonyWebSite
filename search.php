@@ -90,6 +90,8 @@
       <script src="/assets/js/jquery.magnific-popup.js"></script>
       <script src="/assets/js/jquery-ui.js"></script>
       <script src="autocomplete.js"></script>
+
+      
       <script type="text/javascript">
         //include the   'async':false   parameter or the object data won't get captured when loading
         var json = $.getJSON({'url': "items.json", 'async': false});
