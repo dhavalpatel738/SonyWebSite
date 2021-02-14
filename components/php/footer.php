@@ -3,7 +3,7 @@
 
 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
   <li class="nav-item">
-    <p class="text-secondary">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018 <a href="http://www.sonyceramics.com" style="text-decoration: none;"><span class="text-secondary font-weight-bold">Sony Ceramics</span></a>. All rights reserved.</p>
+    <p class="text-secondary">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2018-2021 <a href="http://www.sonyceramics.com" style="text-decoration: none;"><span class="text-secondary font-weight-bold">Sony Ceramics</span></a>. All rights reserved.</p>
     <p class="text-secondary">Made with <i class="fa fa-heart" aria-hidden="true"></i> & <i class="fa fa-coffee" aria-hidden="true"></i>  in Morvi, Gujarat</p>
   </li>
 </ul>
