@@ -11,7 +11,16 @@
     <!-- header navbar-->
     <?php
       echo file_get_contents(HEADER_NAVBAR_REDIRECTS);
+      ?>
 
+      <section class="jumbotron text-left mx-4" style="background-color: #121212;>
+          <div class="container-fluid">
+              <h1 class="jumbotron-heading">Elevation Series</h1>
+              <p class="lead text-warning"><mark>Size: 37.5 x 25 cm (10&#34;x15&#34;)</mark></p>
+          </div>
+      </section>
+
+      <?php
       //return array with file names not starting with '.'
       function not_hidden($path) {
           $files = scandir($path);
