@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
     color: white;
 }
@@ -8,15 +8,9 @@ body{
     height:  50px;
 }
 
-.firstSection {
-    /* margin: 20px auto; */
-
-}
-
 .card {
   background-color: black;
 }
-
 
 .mfp-no-margins img.mfp-img {
   padding: 0;
